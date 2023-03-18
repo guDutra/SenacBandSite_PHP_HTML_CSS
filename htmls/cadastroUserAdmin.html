@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Admin Users</title>
+    <link rel="stylesheet" href="../css/styleCadastroAdmin.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="titulo">
+            <h1>It's always great to have a new Admin User </h1>
+        </div>
+
+    </header>
+
+    <div id="formulario">
+
+
+
+        <form action="../php/postCadastroAdmins.php" method="post" id="formularioo" name="formularioo">
+
+
+            <form id="entrarForm" method="post" name="entrarForm" action="validaAdmin.php">
+
+                <label for="nome"> Name:</label>
+                <input type="text" name="nome" id="nome" size="30" placeholder="Write your name">
+
+                <label for="password">Password:</label>
+                <input type="number" name="password" id="password" placeholder="8 Digits" maxlength="8" size="8">
+                <p><input id="Submit" type="submit" name="Submit" value="Submit"></p>
+
+            </form>
+
+
+        </form>
+
+
+</body>
+
+</html>

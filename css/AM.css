@@ -1,0 +1,364 @@
+
+body {
+    background-color: #6c584c;
+}
+
+header {
+    display: flex;
+    width: 101%;
+    height: 300px;
+    background-color: #d5bdaf;
+   margin-left: -7px;
+    flex-wrap: wrap;
+  
+    
+}
+
+#tittle {
+    width: 100%;
+    height: 200px;
+    background-color: #d5bdaf;
+    padding: 20px;
+
+}
+
+#tittle > h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+#tittle > p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#menuLinks {
+    width: 100%;
+    height: 180px;
+    background-color: #e3d5ca;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left;
+    
+}
+
+
+/*  #menuLinks a  {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #403d39;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+} */
+
+#discografia, #curiosidades  { /*  */
+    list-style: none;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    list-style-type: none;
+    margin-left: 50px;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+
+#curiosidades:hover {
+    font-size: 35px;
+}
+
+#menuLinks ul ul {  /* Referente aos subitens que estão escondidos*/
+    visibility: hidden;
+    list-style: none;
+    list-style-type: none;
+   
+}
+
+
+#menuLinks li {
+    list-style: none;
+    list-style-type: none;
+    
+}
+
+#menuLinks ul  li:hover ul  { /* Referente aos subitens que estão escondidos quando é passado mouse por cima da Discografia*/
+    visibility: visible;
+    flex-wrap: wrap;
+    list-style: none;
+    list-style-type: none;
+    padding: 25px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    transition: 0.4s;
+    justify-content: space-around;
+}
+
+#menuLinks ul  li:hover li:hover {
+    visibility: visible;
+}
+
+
+
+#links {
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+ 
+    margin: -20px;
+    
+}
+
+#links a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    text-decoration: underline white;
+    color: #403d39;
+    font-size: 20px;
+    list-style: none;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+  
+
+}
+
+#links li a:hover  {
+    color: #6c584c;
+    text-decoration: underline olive;
+    visibility: visible;
+    
+}
+main {
+    display: flex;
+    width: 90%;
+    background-color: #e6ccb2;
+    justify-content: center;
+    height: 930px;
+    margin: auto;
+    margin-bottom: -10px;
+    margin-top: 100px;
+    
+}
+
+#lyrics {
+    margin-left: 40px;
+}
+
+img {
+    padding-top: 30px;
+    margin-top: 30px;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 40px;
+    width: 30%;
+    margin-bottom: -50px;
+    
+    
+    
+}
+
+#textoBiografia {
+    height: 350px;
+   
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  
+}
+
+#textoBiografia > h3 {
+    font-size: 28px;
+  
+    text-align: center;
+    margin: auto;
+    
+    padding-bottom: -15px;
+    margin-top: 20px;
+  
+}
+
+#tt {
+    padding-top: 30px;
+}
+
+#textoBiografia > p {
+    
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    
+   
+}
+
+#textBio {
+    margin-top: 50px;
+}
+#textBio  > p{
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+  
+}
+
+#imagemBriwAwards {
+    
+    width: 30%;
+    height: 300px;
+    margin-top: -30px;
+    margin-right: 30px;
+    
+}
+
+#textBio3 {
+    height: 350px;
+    
+    width: 60%;
+    padding-bottom: 30px;
+    
+   
+}
+
+#textBio3 img {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+    
+}
+
+#textBio3 >p {
+    align-items: center;
+   
+    margin: auto;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: left;
+    margin-top: -5px;
+    text-align: justify;
+    margin-left: 40px;
+}
+
+footer {
+    width: 90%;
+
+    display: flex;
+    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+    margin-top: -50px;
+    margin: auto;
+    padding: -15px;
+    background-color: #e3d5ca;
+    padding-top: 15px;
+    text-align: center;
+    
+}
+
+footer > p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho a {
+    text-decoration: underline white;
+    color: black;
+}
+
+#cabecalho a:hover  {
+    font-size: 20px;
+}
+
+#cabecalho {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+ #contato {
+    position: absolute;
+    margin-left: 83%;
+    margin-top: 270px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    list-style: none;
+    height: 60px;
+ }
+
+
+#contato a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+#contato a:hover {
+    text-decoration:underline white;
+    font-size: 40px;
+}
+
+#entrar {
+    position: absolute;
+    margin-left: 1265px;
+    margin-top: 320px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    list-style: none;
+    height: 60px;
+}
+#entrar a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+#entrar a:hover {
+    text-decoration:underline white;
+    font-size: 40px;
+}

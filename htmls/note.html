@@ -1,0 +1,55 @@
+<html>
+   <head>
+	  <meta charset="utf-8">
+      <title>Consulta de Clientes</title>
+	  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+	</head>
+<body>
+	
+	<?php 
+		include('actions/conexao.php'); 
+	?>
+
+	<h1>Consulta de Clientes</h1>
+	
+	<table border = "1" width = "40%" summary = "Tabela de Clientes">
+	<caption><strong>Tabela de Clientes</strong></caption>
+	<thead>
+            <tr> 
+               <!-- <th>Código</th>  -->
+               <th>Nome</th>
+               <th>Fone</th>
+			   <th>Data de Cadastramento</th>
+			   <th>Operação</th>
+            </tr>
+    </thead>
+	<tbody>
+         <?php
+			$resultado = mysqli_query($conexao,"SELECT * FROM clientes");
+			while ($row = mysqli_fetch_array($resultado)){
+				$id = $row['id'];
+				$nome = $row['nome'];
+				$fone = $row['fone'];
+				$data = $row['data_cad'];
+				
+				// Transforma a data de mm-dd-aaaa para dd/mm/aaaa
+				$data_aux = date('d/m/Y', strtotime($data));
+			
+				echo "<tr>";
+				//echo "<td>" .$id ."</td>"; // Não é necessário exibir o id da linha
+				echo "<td>" .$nome ."</td>";
+				echo "<td>" .$fone ."</td>";
+				echo "<td>" .$data_aux ."</td>";
+				echo "<td><a href=\"altera.php?rowid=" .$id ."\">Alterar</a>/<a href=\"exclui.php?rowid=" .$id ."\">Excluir</a></td>";
+				echo "</tr>";
+			}
+		?>
+    </tbody>
+	</table>
+
+	<a href="inclui.php">NOVO</a>
+	<?php
+		mysqli_close($conexao);
+	?>
+</body>
+</html>

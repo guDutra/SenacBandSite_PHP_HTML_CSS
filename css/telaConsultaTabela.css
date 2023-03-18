@@ -1,0 +1,315 @@
+
+body {
+    background-color: #6c584c;
+}
+
+header {
+    display: flex;
+    width: 101%;
+    height: 300px;
+    background-color: #d5bdaf;
+   margin-left: -7px;
+    flex-wrap: wrap;
+  
+    
+}
+
+#tittle {
+    width: 100%;
+    height: 200px;
+    background-color: #d5bdaf;
+    padding: 20px;
+
+}
+
+#tittle > h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+#tittle > p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#menuLinks {
+    width: 100%;
+    height: 180px;
+    background-color: #e3d5ca;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left;
+    
+}
+
+
+/*  #menuLinks a  {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #403d39;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+} */
+
+#discografia, #curiosidades  { /*  */
+    list-style: none;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    list-style-type: none;
+    margin-left: 50px;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+
+#curiosidades:hover {
+    font-size: 35px;
+}
+
+#menuLinks ul ul {  /* Referente aos subitens que estão escondidos*/
+    visibility: hidden;
+    list-style: none;
+    list-style-type: none;
+   
+}
+
+
+#menuLinks li {
+    list-style: none;
+    list-style-type: none;
+    
+}
+
+#menuLinks ul  li:hover ul  { /* Referente aos subitens que estão escondidos quando é passado mouse por cima da Discografia*/
+    visibility: visible;
+    flex-wrap: wrap;
+    list-style: none;
+    list-style-type: none;
+    padding: 25px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    transition: 0.4s;
+    justify-content: space-around;
+}
+
+#menuLinks ul  li:hover li:hover {
+    visibility: visible;
+}
+
+
+
+#links {
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+ 
+    margin: -20px;
+    
+}
+
+#links a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    text-decoration: underline white;
+    color: #403d39;
+    font-size: 20px;
+    list-style: none;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+  
+
+}
+
+#links li a:hover  {
+    color: #6c584c;
+    text-decoration: underline olive;
+    visibility: visible;
+    
+}
+
+main {
+    
+    width: 90%;
+    background-color: #e6ccb2;
+    
+    height: 930px;
+    margin: auto;
+    margin-bottom: -10px;
+    margin-top: 100px;
+    
+}
+
+main h1 {
+    text-align: center; 
+    margin-top: 20px;
+    padding-top: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #403d39;
+    
+}
+
+
+
+ #contato {
+    position: absolute;
+    margin-left: 83%;
+    margin-top: 270px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    list-style: none;
+    height: 60px;
+ }
+
+
+#contato a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+#contato a:hover {
+    text-decoration:underline white;
+    font-size: 40px;
+}
+
+#entrar {
+    position: absolute;
+    margin-left: 1260px;
+    margin-top: 320px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    list-style: none;
+    height: 60px;
+}
+#entrar a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #403d39;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+#entrar a:hover {
+    text-decoration:underline white;
+    font-size: 40px;
+}
+
+
+
+table {
+ 
+    border-width: 2px;
+    border-color: black;
+    background-color:#d5bdaf;
+    border-style: solid;
+    margin: auto;
+   
+    
+   
+    
+}
+
+table tbody {
+    border-width: 2px;
+    border-color: black;
+    background-color:#d5bdaf;
+    border-style: solid;
+    
+
+}
+
+table tbody td {
+    border-width: 1px;
+    border-color: black;
+    background-color:#d5bdaf;
+    border-style: solid;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table thead th {
+    border-width: 1px;
+    border-color: black;
+    background-color:#d5bdaf;
+    border-style: solid;
+    background-color: #6c584c;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 40px;
+    font-size: 20px;
+}
+
+#pesquisaDiv {
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+#pesquisaDiv label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#botao  {
+
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#botao button {
+    height: 50px;
+    width: 180px;
+    background-color: #e3d5ca;
+    border-radius: 20px;
+    border-color: white;
+}
+
+#botao a {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #403d39;
+}
+
+.hide  {
+    display: none;
+}
+
+ td a {
+    text-decoration: none;
+    color: #403d39;;
+}
+
+td a:hover {
+    text-decoration: underline white;
+    color: #403d39;;
+}

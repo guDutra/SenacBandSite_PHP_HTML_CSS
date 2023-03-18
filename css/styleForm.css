@@ -1,0 +1,83 @@
+body {
+    background-color: #e3d5ca;
+}
+
+form {
+   
+   
+   
+    width: 530px;
+  
+    margin-bottom: 50px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+   
+   
+    
+}
+
+#formulario {
+    width: 530px;
+    background-color: #e6ccb2;
+   margin-top: -5px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: left;
+    
+}
+
+
+#titulo {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    background-color: #6c584c;
+    
+
+}
+
+#titulo h1  {
+    text-align: center;
+    color: white;
+}
+
+#nome {
+    width:400px;
+    
+
+}
+form input {
+    margin-top: 5px;
+    margin-bottom:  5px ;
+}
+
+form textarea {
+    margin-top: 5px;
+    resize: none;
+}
+#mm {
+    width: 400px;
+    margin-top: 15px;
+}
+
+#Enviar {
+    width: 120px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+}
+
+
+

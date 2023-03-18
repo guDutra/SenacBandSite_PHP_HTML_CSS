@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Contato </title>
+    <link rel="stylesheet" href="../css/styleForm.css">
+</head>
+<body>
+    <div id="formulario">
+
+        <div id="titulo">
+            <h1>Talk with us!!!</h1>
+        </div>
+        
+
+        <form action="../php/action.php" method="post" id="formularioo" name="formularioo">
+
+
+            <label for="nome"> Name:</label>
+            <input type="text" name="nome" id="nome" size="30" maxlength="30" placeholder="Write your name" >
+    
+            <label for="telefone">Phone:</label>
+            <input type="number" name="telefone" id="telefone" size="15" maxlength="15" placeholder="Contact">
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" size="23" maxlength="30" placeholder="You Email">
+    
+            <label id="mm" for="mensagem">Send us a message:</label>
+             <textarea name="mensagem" id="mensagem" cols="60" rows="10"></textarea>
+             <p>
+                <input id="Enviar" type="submit" name="Submit" value="Submit">
+             </p>
+    
+    
+        </form>
+
+    </div>
+   
+</body>
+</html>
